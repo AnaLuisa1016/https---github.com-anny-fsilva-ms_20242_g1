@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Monitoria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Botão para abrir o pop-up -->
+    <button class="open-popup">Editar Monitoria</button>
+
+    <!-- Pop-up -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            <button class="close-popup" id="close-popup">&times;</button>
+            <h2>INTRODUÇÃO À PROGRAMAÇÃO</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="aluno">Aluno</label>
+                        <input type="text" id="aluno" placeholder="Nome do aluno">
+                    </div>
+                    <div class="form-group">
+                        <label>Turno</label>
+                        <div class="button-group">
+                            <button type="button" class="btn-turno">Matutino</button>
+                            <button type="button" class="btn-turno">Vespertino</button>
+                            <button type="button" class="btn-turno">Noturno</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label>Tipo de monitoria</label>
+                    <div class="button-group">
+                        <button type="button" class="btn-monitoria">Presencial</button>
+                        <button type="button" class="btn-monitoria">Remota</button>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="graduacao">Graduação</label>
+                        <input type="text" id="graduacao" placeholder="Curso">
+                    </div>
+                    <div class="form-group">
+                        <label for="proxima-data">Próxima data</label>
+                        <input type="text" id="proxima-data" placeholder="dd/mm/aa">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="horario">Horário</label>
+                        <input type="text" id="horario" placeholder="00:00">
+                    </div>
+                    <div class="form-group">
+                        <label for="duracao">Duração</label>
+                        <input type="text" id="duracao" placeholder="00:30">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" placeholder="Descrição livre"></textarea>
+                </div>
+
+                <div class="form-row buttons">
+                    <button type="button" class="btn-cancel">Cancelar</button>
+                    <button type="submit" class="btn-save">Salvar</button>
+                    <button type="button" class="btn-delete">Deletar monitoria</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
